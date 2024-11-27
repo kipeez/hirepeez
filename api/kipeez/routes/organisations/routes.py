@@ -1,0 +1,6 @@
+API_organisations_URL = "/v1/organisations"
+API_organisations_config_URL = "/v1/organisations/{organisation_id}/config"
+API_organisations_users_URL = "/v1/organisations/{organisation_id}/users"
+API_organisations_owner_URL = "/v1/organisations/{organisation_id}/owner"
+API_organisations_invitation_create_URL = "/v1/organisations/{organisation_id}/invitations"
+API_organisations_invitation_accept_URL = "/v1/organisations/{organisation_id}/invitations/{invitation_id}"

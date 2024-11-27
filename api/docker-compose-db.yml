@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mycomplicatedpwd
+      POSTGRES_DB: hirepeez
+    ports:
+      - "5432:5432"
+    command: -c 'listen_addresses=*' -c shared_preload_libraries=pg_stat_statements -c pg_stat_statements.track=all
+
+volumes:
+  postgres-data:
